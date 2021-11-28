@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.scss">
+        <title>Liste de Noël</title>
+    </head>
+    <body>
+        <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❄
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❄
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❄
+            </div>
+        </div>
+
+        <div class="titre">
+            <h1><a href="https://www.youtube.com/watch?v=aAkMkVFwAoo#t=0m59s" target="_blank">Ma Liste de Noël</a></h1>
+        </div>
+
+        <!-- <div style="border-bottom: 3px solid #4CA4BD;""></div> -->
+        <br><br>
+
+        <div id="mainDiv">
+            <div class="item" id="gauche1">
+
+                <img type="button" src="images/phantom.jpg" alt="Eau de toilette Phantom de Paco Rabanne" onclick="showDiv('ShowDiv')"/>
+                <input type="text" id="txt_1" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                
+                <a href="https://www.sephora.fr/p/phantom---eau-de-toilette-P10017948.html" target="_blank" class="description">
+                    <div id="ShowDiv" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Phantom de Paco Rabanne<br>Eau de toilette</p>
+                        <p style="font-size: 1em;">Parce qu'il sent trop bon.<br>(50 ou 100 mL)</p>
+                    </div>
+                </a>
+
+                <br>
+
+                <img src="images/GAN251m.jpg" alt="Gan 251m" onclick="showDiv('ShowDiv2')"/>
+                <input type="text" id="txt_2" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://kubekings.fr/cube-2x2/gan-251-m.html#/31-couleur-stickerless" target="_blank" class="description">
+                    <div id="ShowDiv2" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Gan 251m 2x2 Cube (stickerless)</p>
+                        <p style="font-size: 1em;">Un coin a cassé sur mon 2x2<br>(c'était un cheap cube)</p>
+                    </div>
+                </a>
+
+                <br>
+
+                <img src="images/dvdBlackWidow.jpg" alt="DVD Black Widow" onclick="showDiv('ShowDiv3')"/>
+                <input type="text" id="txt_3" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.e.leclerc/pr/black-widow" target="_blank" class="description">
+                    <div id="ShowDiv3" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Black Widow DVD</p>
+                        <p style="font-size: 1em;">Dernier film du MCU sorti en DVD.<br>Pour completer la collection.</p>
+                    </div>
+                </a>
+
+                <br>
+
+                <img src="images/ceinture.jpg" alt="Ceinture Lombaire Musculation" onclick="showDiv('ShowDiv4')"/>
+                <input type="text" id="txt_4" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.amazon.fr/RDX-Musculation-Bodybuilding-Halterophilie-Entra%C3%AEnement/dp/B01BDNWYN8/ref=sr_1_5?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3PN1O9JN14Y65&keywords=ceinture%2Blombaire%2Bmusculation&qid=1637872727&sprefix=ceinture%2Blombaire%2Caps%2C243&sr=8-5&th=1&psc=1" target="_blank" class="description">
+                    <div id="ShowDiv4" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Ceinture Lombairique Musculation</p>
+                        <p style="font-size: 1em;">Ceinture pour maintenir la sangle <br>abdominalepour éviter les déchirures<br>lors des séances dites lourdes.</p>
+                    </div>
+                </a>
+
+                <br>
+            
+            </div>
+
+            <div class="item" id="gauche2">
+
+                <img src="images/popWenwu.jpg" alt="Pop Wenwu" onclick="showDiv('ShowDiv5')"/>
+                <input type="text" id="txt_5" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.shopdisney.fr/funko-figurine-pop-wenwu-en-vinyle-shang-chi-et-la-legende-des-dix-anneaux-461011913855.html" target="_blank" class="description">
+                    <div id="ShowDiv5" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Figurine Pop Wenwu (Shang Chi)</p>
+                        <p style="font-size: 1em;">Parce qu'elle est stylée.</p>
+                    </div>
+                </a>
+
+                <br>
+
+                <img src="images/popDrStrange.jpg" alt="Pop Supreme DrStrange" onclick="showDiv('ShowDiv6')"/>
+                <input type="text" id="txt_6" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.popinabox.fr/marchandise-figurines/marvel-what-if...-doctor-strange-supreme-funko-pop-vinyl/12738710.html" target="_blank" class="description">
+                    <div id="ShowDiv6" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Figurine Pop<br>Supreme Dr Strange<br>(What if?)</p>
+                        <p style="font-size: 1em;">Parce qu'elle est aussi stylée.</p>
+                    </div>
+                </a>
+
+                <br>
+
+                <img src="images/popMilesMorales.jpg" alt="Pop Miles Morales" onclick="showDiv('ShowDiv7')"/>
+                <input type="text" id="txt_7" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.popinabox.fr/marchandise-figurines/ms-mm-pop1-pop-vinyle/12698585.html" target="_blank" class="description">
+                    <div id="ShowDiv7" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Figurine Pop Miles Morales<br>(Spiderman Miles Morales)</p>
+                        <p style="font-size: 1em;">Parce que elle elle est vraiment stylée.</p>
+                    </div>
+                </a>
+
+                <br>
+
+                <img src="images/popSpiderman.jpg" alt="Pop Spiderman" onclick="showDiv('ShowDiv8')"/>
+                <input type="text" id="txt_8" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.popinabox.fr/marchandise-figurines/marvel-spider-man-no-way-home-integrated-suit-funko-pop-vinyl/12906475.html" target="_blank" class="description">
+                    <div id="ShowDiv8" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Figurine Pop Spiderman<br>(No Way Home)</p>
+                        <p style="font-size: 1em;">Parce que elle elle est encore plus stylée.</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="item" id="droite1">
+                
+                <img src="images/lampe.jpg" alt="Lampe de bureau" onclick="showDiv('ShowDiv9')"/>
+                <input type="text" id="txt_9" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.amazon.fr/Architecte-Temp%C3%A9rature-Luminosit%C3%A9-Protection-M%C3%A9tallique/dp/B08NNZ6NC2/ref=sr_1_23?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=lampe+bureau+benq&qid=1637529895&sr=8-23" target="_blank" class="description">
+                    <div id="ShowDiv9" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Lampe de Bureau</p>
+                        <p style="font-size: 1em;">Ma lampe de bureau à cramée<br>quand les plombs ont sautés.<br> Depuis je ne vois plus grand chose quand j'écris.</p>
+                    </div>
+                </a>
+
+                <br>
+
+                <img src="images/trousse.jpg" alt="Trousse de toilettes" onclick="showDiv('ShowDiv10')"/>
+                <input type="text" id="txt_10" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.amazon.fr/gp/product/B085ZLZVMF/ref=ox_sc_act_title_2?smid=A2OP5WBC82O0AW&psc=1" target="_blank" class="description">
+                    <div id="ShowDiv10" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Trousse de toilettes</p>
+                        <p style="font-size: 1em;">Ma trousse de toilettes est déchirée/trouée<br>du coup une trousse neuve ça serait cool.</p>
+                    </div>
+                </a>
+
+                <br>
+
+                <img src="images/coussinet.jpg" alt="Coussinet du Logitech G pro X" onclick="showDiv('ShowDiv11')"/>
+                <input type="text" id="txt_11" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.amazon.fr/gp/product/B08ZXSRLVL/ref=ox_sc_act_title_1?smid=A3U728A1FZG1ZV&psc=1" target="_blank" class="description">
+                    <div id="ShowDiv11" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Coussinets d'oreille de rechange<br>compatibles avec Logitech G PRO X</p>
+                        <p style="font-size: 1em;">Mes coussinets d'oreille sont déchirés,<br>c'est assez désagréable en portant le casque.</p>
+                    </div>
+                </a>
+
+                <br>
+
+                <img src="images/streamDeck.jpg" alt="Stream Deck" onclick="showDiv('ShowDiv12')"/>
+                <input type="text" id="txt_12" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.amazon.fr/Elgato-Stream-Deck-Contr%C3%B4leur-Personnalisables/dp/B06W2KLM3S?ref_=Oct_DLandingS_D_72bb8658_60&smid=A1X6FK5RDHNB96" target="_blank" class="description">
+                    <div id="ShowDiv12" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Stream Deck Elgato (On sait jamais)</p>
+                        <p style="font-size: 1em;">Ca peut m'être super utile en informatique<br>Raccourcis bureautique.</p>
+                    </div>
+                </a>
+
+                <br>
+
+            </div>
+
+            <div class="item" id="droite2">
+
+                <img src="images/mugShangChi.jpg" alt="Mug Shang Chi" onclick="showDiv('ShowDiv13')"/>
+                <input type="text" id="txt_13" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.shopdisney.fr/disney-store-mug-voyage-shang-chi-et-la-legende-des-dix-anneaux-465031845967.html?&cmp=knc-go:shopad:TDS-FR-Shopping-Smart-All:pcode:::Shopping:::dest&mckv=_dc%7cpcrid%7c300644335890%7cpkw%7c%7cpmt%7c&gclsrc=ds&gclsrc=ds" target="_blank" class="description">
+                    <div id="ShowDiv13" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Mug Shang Chi</p>
+                        <p style="font-size: 1em;">Parce que quand je joue/travaille/chilling out sur mon PC,<br>j'ai toujours à manger ou à boire pas loin.</p>
+                    </div>
+                </a>
+
+                <br>
+
+                <img src="images/sora.jpg" alt="Sora Fighter Pass" onclick="showDiv('ShowDiv14')"/>
+                <input type="text" id="txt_14" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.nintendo.fr/Contenu-telechargeable/Set-de-combattant-Sora-1713103.html" target="_blank" class="description">
+                    <div id="ShowDiv14" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Set de combattant Sora<br>(Super Smash Bros Ultimate<br>[Nintendo Switch])</p>
+                        <p style="font-size: 1em;">Nouveau personnage de Super Smash Bros Ultimate.</p>
+                    </div>
+                </a>
+
+                <br>
+
+                <img src="images/combipyj.jpg" alt="Combinaison Pyjama Deadpool" onclick="showDiv('ShowDiv15')"/>
+                <input type="text" id="txt_15" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.amazon.fr/Marvel-Deadpool-Combinaison-Grenouill%C3%A8re-Polaire/dp/B08DFKDBRV/ref=sr_1_10?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=combinaison%2Bpyjama%2Bhomme%2Bdragon&qid=1637690316&sr=8-10&th=1&psc=1" target="_blank" class="description">
+                    <div id="ShowDiv15" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Une Combinaison Pyjama Deadpool</p>
+                        <p style="font-size: 1em;">Parce que c'est drole et que quand j'ai froid<br>bah je mets ça et j'aurai plus froid.</p>
+                    </div>
+                </a>
+
+                <br>
+
+                <img src="images/morris.jpg" alt="Morris" onclick="showDiv('ShowDiv16')"/>
+                <input type="text" id="txt_16" class="dessous" placeholder="Ecrire son nom pour réserver cet objet." onkeyup='saveValue(this);'/> 
+                <br>
+                <a href="https://www.amazon.fr/zhuoji-Peluche-anneauxpoup%C3%A9e-Animale-Poup%C3%A9es/dp/B09HMWWSVS/ref=sr_1_5?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=shang+chi+morris&qid=1637873562&sr=8-5" target="_blank" class="description">
+                    <div id="ShowDiv16" style="display:none;" class="pDesc">
+                        <p style="font-size: 1.3em; color: #4CA4BD;">Peluche Morris du film Shang Chi</p>
+                        <p style="font-size: 1em;">Parce que j'ai envie d'un Morris.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <script type="text/javascript">
+
+            document.getElementById("txt_1").value = getSavedValue("txt_1");
+            document.getElementById("txt_2").value = getSavedValue("txt_2");
+            document.getElementById("txt_3").value = getSavedValue("txt_3");
+            document.getElementById("txt_4").value = getSavedValue("txt_4");
+            document.getElementById("txt_5").value = getSavedValue("txt_5");
+            document.getElementById("txt_6").value = getSavedValue("txt_6");
+            document.getElementById("txt_7").value = getSavedValue("txt_7");
+            document.getElementById("txt_8").value = getSavedValue("txt_8");
+            document.getElementById("txt_9").value = getSavedValue("txt_9");
+            document.getElementById("txt_10").value = getSavedValue("txt_10");
+            document.getElementById("txt_11").value = getSavedValue("txt_11");
+            document.getElementById("txt_12").value = getSavedValue("txt_12");
+            document.getElementById("txt_13").value = getSavedValue("txt_13");
+            document.getElementById("txt_14").value = getSavedValue("txt_14");
+            document.getElementById("txt_15").value = getSavedValue("txt_15");
+            document.getElementById("txt_16").value = getSavedValue("txt_16");
+
+            function saveValue(e){
+                var id = e.id;
+                var val = e.value;
+                localStorage.setItem(id, val);
+            }
+    
+            function getSavedValue  (v){
+                if (!localStorage.getItem(v)) {
+                    return "";
+                }
+                return localStorage.getItem(v);
+            }
+
+            var btn = document.querySelectorAll("button[type=button]");
+            btn.addEventListener("click", ()=>{
+
+                if(btn.innerText === "Réserver"){
+                    btn.innerText = "Ce produit est réversé.";
+                    btn.style.backgroundColor = "#4CA4BD";
+                    btn.style.color = "white";
+                }else{
+                    btn.innerText= "Réserver";
+                    btn.style.backgroundColor = "white";
+                    btn.style.color = "black";
+                }
+            });
+
+            
+            function showDiv(Div) {
+                var x = document.getElementById(Div);
+                if(x.style.display=="none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+                $(Div).hide();
+            }
+
+        </script>
+    </body>
+</html>

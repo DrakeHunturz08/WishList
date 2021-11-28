@@ -1,0 +1,282 @@
+body {
+    background-color: #0E0C29;
+}
+
+.snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}
+@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}
+.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:5s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:5s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}
+.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}
+.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}
+.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}
+.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}
+.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}
+.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}
+.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}
+.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}
+.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}
+.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+
+.demo {
+    font-family: 'Raleway', sans-serif;
+    color:#fff;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+.demo a{
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+}
+
+#mainDiv {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.answer_list {
+    color: #ffffff;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    background-color: grey;
+    border-radius: 20px 20px 0 0;
+    border: none;
+    transition: 0.2s;
+}
+
+img:hover {
+    width: 305px;
+    height: 305px;
+    background-color: grey;
+    border-radius: 20px 20px 20px 20px;
+    border: 6px solid #4CA4BD;
+    transition: 0.2s;
+}
+
+.dessous {
+    display: block;
+    width: 279px;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px;
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.1s;
+}
+
+.dessous:hover {
+    background-color: #171d2e;
+    border: 2px solid #4CA4BD;
+    width: 310px;
+    transition: 0.1s;
+    color: #ffffff;
+}
+
+button {
+    display: block;
+    width: 303px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px;
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.1s;
+}
+
+button:hover {
+    background-color: #171d2e;
+    border: 2px solid #4CA4BD;
+    width: 310px;
+    transition: 0.1s;
+    color: #ffffff;
+}
+
+button:active{
+    background-color:#4CA4BD;
+}
+
+@keyframes slidetop {
+    0% {
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+    animation: 1s ease-out 0s 1 slidetop;
+}
+
+h1:before, h1:after {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 50px 0;
+    height: 1px;
+    width: 200px;
+    background: #ffffff;
+    content: "";
+    transition: all .3s;
+}
+
+h1:hover:before, h1:hover:after {
+    background: #c30000;
+    width: 460px;
+    transition: all .3s;
+}
+
+h1>a:hover {
+    color: #c30000;
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:link {
+    display: block;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+@keyframes slideleft1 {
+    0% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(40%);
+    }
+    80%{
+        transform: translateX(20%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideleft2 {
+    0% {
+        transform: translateX(-130%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(15%);
+    }
+    80%{
+        transform: translateX(8%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideright1 {
+    0% {
+        transform: translateX(130%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(-15%);
+    }
+    80%{
+        transform: translateX(-8%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideright2 {
+    0% {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(-40%);
+    }
+    80%{
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+}
+
+#gauche1 {
+    animation: 1s ease-out 0s 1 slideleft1;
+}
+
+
+#droite1 {
+    animation: 1s ease-out 0s 1 slideright1;
+}
+
+#gauche2 {
+    padding-top: 1px;
+    animation: 1s ease-out 0s 1 slideleft2;
+}
+
+#droite2 {
+    padding-top: 1px;
+    animation: 1s ease-out 0s 1 slideright2;
+}
+
+.description {
+    background-color: #202940;
+    border-radius: 15px 15px 15px 15px;
+    padding: 0px 0px;
+}
+
+.description:hover {
+    background-color: #171d2e;
+    border: 3px solid #4CA4BD;
+}
+
+.pDesc {
+    padding: 20px 20px;
+}
