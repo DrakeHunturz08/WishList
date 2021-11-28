@@ -172,6 +172,10 @@ a:visited {
     color: #ffffff;
 }
 
+a {
+    color: #ffffff;
+}
+
 @keyframes slideleft1 {
     0% {
         transform: translateX(-150%);
