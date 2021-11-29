@@ -438,3 +438,7 @@ div.borderXwidth3 a:hover:before, div.borderXwidth3 a:hover:after
     border-radius: 15px 15px 15px 15px;
     padding: 0px 0px;
 }
+
+.liDesc:hover {
+    border: 3px solid #4CA4BD;
+}
